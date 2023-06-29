@@ -4,7 +4,7 @@ $color-brown-dark: #A14F03
 $color-white: #FAFAFA
 $color-black: #000000
 
-
+$box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.5))
 
     
 *, ::after, ::before
@@ -95,7 +95,7 @@ body
         position: relative
     &:hover
         transform: translateY(-5px)
-        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.5))
+        box-shadow: $box-shadow
         &::after
             opacity: 0
             transform: scaleX(1.2) scaleY(1.5)
