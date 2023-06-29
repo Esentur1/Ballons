@@ -12,10 +12,10 @@ body {
   font-family: "Roboto", "sans-serif";
   font-weight: 400;
   color: #777777;
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
   background-color: white;
-  padding: 50px;
+  padding: 5rem;
 }
 
 .container {
@@ -32,10 +32,10 @@ body {
 
 .header__logo {
   position: absolute;
-  width: 50px;
-  height: 70px;
-  top: 50px;
-  left: 50px;
+  width: 5rem;
+  height: 7rem;
+  top: 5rem;
+  left: 5rem;
 }
 
 .header__box {
@@ -49,15 +49,15 @@ body {
 
 .title-first {
   color: #FAFAFA;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .title-first__main {
   display: block;
   font-weight: 800;
   font-size: 5rem;
-  line-height: 60px;
-  letter-spacing: 5px;
+  line-height: 6rem;
+  letter-spacing: .5rem;
   color: #FAFAFA;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -72,8 +72,8 @@ body {
   display: block;
   font-weight: 100;
   font-size: 4rem;
-  line-height: 48px;
-  letter-spacing: 2px;
+  line-height: 4.8rem;
+  letter-spacing: .2rem;
   animation-name: rightToLeft;
   animation-duration: 2s;
   animation-delay: 0s;
@@ -85,23 +85,23 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  width: 277px;
-  height: 54px;
+  width: 27.7rem;
+  height: 5.4rem;
   background: #FAFAFA;
-  border-radius: 50px;
+  border-radius: 5rem;
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 24px;
-  letter-spacing: 1px;
+  line-height: 2.4rem;
+  letter-spacing: .1rem;
   color: #777777;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   transition: all .3s;
   position: relative;
 }
 
 .btn:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.5rem);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .btn:active {
-  transform: translateY(-10px);
+  transform: translateY(-1rem);
 }
 
 .btn::after {
@@ -119,7 +119,7 @@ body {
   background: #FAFAFA;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 5rem;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -137,38 +137,38 @@ body {
 @keyframes btnToUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5rem);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
 @keyframes leftToRight {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(30px);
+    transform: translateX(3rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 
 @keyframes rightToLeft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-30px);
+    transform: translateX(-3rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
