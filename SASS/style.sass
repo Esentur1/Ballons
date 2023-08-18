@@ -1,6 +1,9 @@
 @import "abstracts/_variable.sass"
 @import "abstracts/_mixins.sass"
 @import "abstracts/_functions.sass"
+@import "base/_animations.sass"
+@import "components/_button.sass"
+
 
 html
     font-size: 62.5%
@@ -65,81 +68,9 @@ body
         animation-timing-function: ease
         backface-visibility: hidden
 
-.btn
-    &:link, &:visited
-        @include style-link($color-gray)
-        width: 27.7rem
-        height: 5.4rem
-        background: $color-white
-        border-radius: 5rem
-        font-style: normal
-        font-weight: 600
-        font-size: 2rem
-        line-height: 2.4rem
-        letter-spacing: .1rem
-        padding: 1.5rem 4rem
-        transition: all .3s
-        position: relative
-    &:hover
-        transform: translateY(-.5rem)
-        box-shadow: $box-shadow
-        &::after
-            opacity: 0
-            transform: scaleX(1.2) scaleY(1.5)
-    &:active 
-        transform: translateY(-1rem)
-    &::after
-        content: ""
-        background: $color-white
-        width: 100%
-        height: 100%
-        border-radius: 5rem
-        display: inline-block
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
-        transition: all 1s
-        opacity: 0.3
-    &_animated
-        animation: btnToUp .5s ease-out .7s
-        animation-fill-mode: backwards
-
-
 // .arrow
 //     width: 500px
 //     height: 300px
 //     background-color: black
 //     clip-path: polygon(0 20%, 60% 20%, 60% 0, 100% 50%, 60% 100%, 60% 80%, 0 80%)
 
-@keyframes btnToUp
-    0%
-        opacity: 0
-        transform: translateY(5rem)
-    100%
-        opacity: 1
-        transform: translateY(0)
-
-@keyframes leftToRight
-    0%
-        opacity: 0
-        transform: translateX(-10rem)
-    
-    80%
-        transform: translateX(3rem)
-
-    100%
-        opacity: 1
-        transform: translateX(0)
-        
-@keyframes rightToLeft
-    0%
-        opacity: 0
-        transform: translateX(10rem)
-    
-    80%
-        transform: translateX(-3rem)
-
-    100%
-        opacity: 1
-        transform: translateX(0)
