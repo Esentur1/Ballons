@@ -78,7 +78,7 @@ body {
 }
 
 .title-first__main {
-  display: inline-block;
+  display: block;
   font-weight: 800;
   font-size: 5rem;
   line-height: 6rem;
@@ -161,6 +161,10 @@ body {
 
 .margin-bottom-50px {
   margin-bottom: 5rem;
+}
+
+.margin-bottom-24px {
+  margin-bottom: 2.4rem;
 }
 
 .btn:link, .btn:visited {
@@ -246,7 +250,7 @@ body {
 }
 
 .composition__photo {
-  width: 60%;
+  width: 35%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   position: absolute;
@@ -255,14 +259,14 @@ body {
 }
 
 .composition__photo_n1 {
-  left: 250px;
-  top: 117px;
+  left: 161px;
+  top: 59px;
   z-index: 2;
 }
 
 .composition__photo_n2 {
   left: 22px;
-  top: 220px;
+  top: 118px;
   z-index: 3;
 }
 
@@ -279,6 +283,31 @@ body {
 
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
+}
+
+.about-card {
+  width: 24rem;
+  height: 30rem;
+  border-radius: .5rem;
+  background: rgba(250, 250, 250, 0.8);
+  padding-top: 2.4rem;
+  text-align: center;
+  transition: all .5s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-card__icon {
+  width: 6.3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-card__title-third {
+  padding-top: 2.4rem;
+}
+
+.about-card:hover {
+  transform: translateY(-1rem);
 }
 
 .header {
@@ -353,4 +382,18 @@ body {
 
 .section-about {
   padding-top: 8rem;
+  margin-bottom: 5.4rem;
+}
+
+.section-cards-about {
+  padding-top: 21.6rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  height: 95vh;
+  background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%), url(../img/cards-about-background.jpg) center/cover no-repeat;
+  clip-path: polygon(0 5%, 100% 10%, 100% 95%, 0 90%);
+}
+
+.section-cards-about__content {
+  margin: 0 auto;
 }
