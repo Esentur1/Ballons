@@ -1,6 +1,6 @@
 //Это компонент кнопки
 .btn
-    &:link, &:visited
+    &, &:link, &:visited
         @include style-link($color-gray)
         width: 27.7rem
         height: 5.4rem
@@ -15,6 +15,7 @@
         transition: all .3s
         position: relative
         box-shadow: $box-shadow
+        border: none
     &:hover
         transform: translateY(-.5rem)
         box-shadow: $box-shadow
@@ -39,3 +40,11 @@
     &_animated
         animation: btnToUp .5s ease-out .7s
         animation-fill-mode: backwards
+
+.btn_brown
+    &, &:link, &:visited
+        background: $color-brown-dark
+        color: $color-white
+        &:hover
+        &::after
+            background: $color-brown-dark
